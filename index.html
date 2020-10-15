@@ -2,40 +2,48 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Multiplayer Game</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-    <script src="p5.play.js"></script>
+      <title>Virtual Pet-1</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+      <script src="p5.play.js"></script>
+      <script src="js/food.js"></script>
+      
 
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+      
+     
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
 
 
-    <script>
-      //Your web app's Firebase configuration
-      var firebaseConfig = {
-    apiKey: "AIzaSyBbpqwHrRiLr-6OumylM1C48HVG25MDUhw",
-    authDomain: "car-racing-game-24956.firebaseapp.com",
-    databaseURL: "https://car-racing-game-24956.firebaseio.com",
-    projectId: "car-racing-game-24956",
-    storageBucket: "car-racing-game-24956.appspot.com",
-    messagingSenderId: "800815670086",
-    appId: "1:800815670086:web:6fc1d59d064fdc448f7b47"
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8vu1khzICX1bp08w_XrLYg6WobStqTcc",
+    authDomain: "virtual-pet-ba731.firebaseapp.com",
+    databaseURL: "https://virtual-pet-ba731.firebaseio.com",
+    projectId: "virtual-pet-ba731",
+    storageBucket: "virtual-pet-ba731.appspot.com",
+    messagingSenderId: "1065954149432",
+    appId: "1:1065954149432:web:d89b490dd8a022c79cd2cd"
   };
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    </script>
-
-    <script src="js/Player.js"></script>
-    <script src="js/Form.js"></script>
-    <script src="js/Game.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-  </head>
-  <body>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+      <script src="sketch.js"></script>
+    </body>
+  </html>
